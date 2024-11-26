@@ -1,0 +1,113 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 200vh;
+  width: 100%;
+  flex-direction: row;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1c1c1e;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.menu ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.menu ul li a:hover {
+  color: #1abc9c;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #242424;
+  color: #ffffff;
+}
+
+/* Player */
+.player {
+  background-color: #1c1c1e;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.player iframe {
+  width: 200px;
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.player .controls {
+  flex-grow: 1;
+}
+
+.player .controls p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.player .player-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  background: #222;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1abc9c;
+}
